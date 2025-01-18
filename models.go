@@ -1,8 +1,15 @@
-package models
+package PostsModels
+
+import (
+	"time"
+
+	"github.com/google/uuid"
+)
 
 type Post struct {
-	Title          string `json:"title"`
-	Description    string `json:"description"`
-	Owner          string `json:"owner"`
-	DateOfCreation int64  `json:"date_of_creation"`
+	ID             uuid.UUID `json:"id"`
+	Title          string    `json:"title"`
+	Description    string    `json:"description"`
+	Owner          string    `json:"owner"`
+	DateOfCreation time.Time `json:"date_of_creation"`
 }
