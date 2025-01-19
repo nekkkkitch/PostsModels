@@ -23,4 +23,5 @@ type Notification struct {
 	Creator     string `json:"creator"`
 	Title       string `json:"title"`
 	Description string `json:"description"`
+	ToWho       uuid.UUID
 }
