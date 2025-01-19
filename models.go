@@ -20,8 +20,8 @@ type Post struct {
 }
 
 type Notification struct {
-	Creator     string `json:"creator"`
-	Title       string `json:"title"`
-	Description string `json:"description"`
-	ToWho       uuid.UUID
+	Creator     string      `json:"creator"`
+	Title       string      `json:"title"`
+	Description string      `json:"description"`
+	Receivers   []uuid.UUID `json:"receivers"`
 }
